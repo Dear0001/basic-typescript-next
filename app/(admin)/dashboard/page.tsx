@@ -1,11 +1,9 @@
-import React from 'react'
-
-const page = () => {
+const Dashboard = () => {
   return (
     <div className='h-screen grid place-content-center text-5xl'>
-      This is contact us
+      Dashboard
     </div>
   )
 }
 
-export default page
+export default Dashboard

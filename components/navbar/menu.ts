@@ -19,4 +19,9 @@ export const MenuList = [
     path: "/contact",
     active: false,
   },
+  {
+    name: "Pricing",
+    path: "/price",
+    active: false,
+  },
 ];

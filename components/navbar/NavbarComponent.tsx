@@ -23,22 +23,22 @@ export function NavbarComponent() {
   const [menu, setMenu] = useState<MenuItem[]>(MenuList)
 
   // const isService = true;
-  const updateMenu = (path : string) => {
-    const newMenu = MenuList.map((item) => {
-        if(path === item.path) {
-          return {
-            ...item,
-            active: true
-          }
-        } else {
-          return {
-            ...item,
-            active: false
-          }
-        }
-    })
-    setMenu(newMenu)
-  }
+  // const updateMenu = (path : string) => {
+  //   const newMenu = MenuList.map((item) => {
+  //       if(path === item.path) {
+  //         return {
+  //           ...item,
+  //           active: true
+  //         }
+  //       } else {
+  //         return {
+  //           ...item,
+  //           active: false
+  //         }
+  //       }
+  //   })
+  //   setMenu(newMenu)
+  // }
 
   console.log(pathname);
   return (
@@ -57,8 +57,8 @@ export function NavbarComponent() {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        {menu?.map((item, index) => (
-          <NavbarLink onClick={()=>updateMenu(item.path)} key={index} as={Link} href={item.path} active={item.active}>
+        {menu.map((item, index) => (
+          <NavbarLink key={index}  as={Link} href={item.path} active={item.path === pathname} >
             {item.name}
           </NavbarLink>
         ))}
