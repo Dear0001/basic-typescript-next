@@ -7,7 +7,6 @@ export default function Error({
   error: Error, reset: () => void
 }) {
   return (  
-    // global-error must include html and body tags
     <html>
       <body className="h-screen grid place-content-center text-5xl">
         <h3>Something went wrong!</h3>

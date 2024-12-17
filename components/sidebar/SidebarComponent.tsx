@@ -8,7 +8,7 @@ import {MenuList} from "./menu"
 type MenuItem = {
   name: string;
   path: string;
-  icon: string;
+  icon: React.ElementType;
 };
 
 export function SidebarComponent() {

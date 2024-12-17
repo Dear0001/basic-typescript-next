@@ -13,7 +13,6 @@ export const MenuList = [
     name: "Dashboard",
     path: "/dashboard",
     icon: HiChartPie,
-    active: true,
   },
   {
     name: "Setting",
