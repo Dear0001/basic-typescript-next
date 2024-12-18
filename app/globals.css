@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-	font-family: var(--font-inter), var(--font-suwannaphum) !important;
+  font-family: var(--font-inter), var(--font-suwannaphum) !important;
 }
 /* 
 h1 {
@@ -12,6 +11,5 @@ h1 {
 } */
 
 .none-scroll-bar::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
-
